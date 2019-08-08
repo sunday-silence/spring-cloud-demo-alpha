@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-support-file" />
+        <module name="spring-cloud-common-concrete-dependence" />
+        <module name="spring-cloud-support-mq" />
+        <module name="spring-cloud-common-application-dependence" />
+        <module name="spring-cloud-support-notify" />
+        <module name="spring-cloud-infrastructure-eurekaserver" />
+        <module name="spring-cloud-common-bean" />
+        <module name="spring-cloud-application-crm-pc" />
+        <module name="spring-cloud-common-core" />
+        <module name="spring-cloud-business-goods-api" />
+        <module name="spring-cloud-infrastructure-gateway" />
+        <module name="spring-cloud-business-customer" />
+        <module name="spring-cloud-common-parent" />
+        <module name="spring-cloud-application-ecp-mix" />
+        <module name="spring-cloud-business-goods-concrete" />
+        <module name="spring-cloud-infrastructure-configserver" />
+        <module name="spring-cloud-common-api-dependence" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-cloud-application-crm-pc" options="-parameters" />
+      <module name="spring-cloud-application-ecp-mix" options="-parameters" />
+      <module name="spring-cloud-business-customer" options="-parameters" />
+      <module name="spring-cloud-business-goods-api" options="-parameters" />
+      <module name="spring-cloud-business-goods-concrete" options="-parameters" />
+      <module name="spring-cloud-common-api-dependence" options="-parameters" />
+      <module name="spring-cloud-common-application-dependence" options="-parameters" />
+      <module name="spring-cloud-common-bean" options="-parameters" />
+      <module name="spring-cloud-common-concrete-dependence" options="-parameters" />
+      <module name="spring-cloud-common-core" options="-parameters" />
+      <module name="spring-cloud-common-parent" options="-parameters" />
+      <module name="spring-cloud-infrastructure-configserver" options="-parameters" />
+      <module name="spring-cloud-infrastructure-eurekaserver" options="-parameters" />
+      <module name="spring-cloud-infrastructure-gateway" options="-parameters" />
+      <module name="spring-cloud-support-file" options="-parameters" />
+      <module name="spring-cloud-support-mq" options="-parameters" />
+      <module name="spring-cloud-support-notify" options="-parameters" />
+    </option>
+  </component>
+</project>
