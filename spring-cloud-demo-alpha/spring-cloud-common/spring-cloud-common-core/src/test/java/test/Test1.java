@@ -1,8 +1,5 @@
 package test;
 
-import cn.speedyframework.demo.common.core.enums.DefaultExceptionResultStatus;
-import cn.speedyframework.demo.common.core.enums.DefaultNormalResultStatus;
-import cn.speedyframework.demo.common.core.exception.GlobalException;
 import org.junit.Test;
 
 /**
@@ -14,9 +11,5 @@ public class Test1 {
 
     @Test
     public void test() {
-        DefaultNormalResultStatus.SUCCESS.flowResult().response();
-        DefaultNormalResultStatus.FAILED.responseResult("");
-
-        GlobalException globalException = DefaultExceptionResultStatus.DATABASE_ERROR.buildException();
     }
 }

@@ -20,6 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <system-project.version>${project.version}</system-project.version>
     </properties>
 
     <modelVersion>4.0.0</modelVersion>
@@ -36,6 +37,38 @@
                 <version>${spring-cloud.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.speedyframework.demo</groupId>
+                <artifactId>spring-cloud-common-core</artifactId>
+                <version>${system-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.speedyframework.demo</groupId>
+                <artifactId>spring-cloud-common-bean</artifactId>
+                <version>${system-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.speedyframework.demo</groupId>
+                <artifactId>spring-cloud-common-application-dependence</artifactId>
+                <version>${system-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.speedyframework.demo</groupId>
+                <artifactId>spring-cloud-common-api-dependence</artifactId>
+                <version>${system-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.speedyframework.demo</groupId>
+                <artifactId>spring-cloud-common-concrete-dependence</artifactId>
+                <version>${system-project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.58</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

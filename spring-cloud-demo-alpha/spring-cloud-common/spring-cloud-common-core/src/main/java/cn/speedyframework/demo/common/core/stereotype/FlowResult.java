@@ -26,7 +26,7 @@ public final class FlowResult {
 
     // 转换为响应结果，并附带响应数据
     public <T> ResponseResult<T> response(T data) {
-        return ResponseResult.of(this, data);
+        return ResponseResult.of(success, code, message, data);
     }
 
     // 转换为响应结果
