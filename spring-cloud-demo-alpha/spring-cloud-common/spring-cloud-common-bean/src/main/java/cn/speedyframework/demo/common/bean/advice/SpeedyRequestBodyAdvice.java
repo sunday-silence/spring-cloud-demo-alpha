@@ -1,6 +1,6 @@
 package cn.speedyframework.demo.common.bean.advice;
 
-import cn.speedyframework.demo.common.bean.InitializingLogBean;
+import cn.speedyframework.demo.common.core.interfaces.InitializingLogBean;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
@@ -13,6 +13,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdviceAd
 import java.lang.reflect.Type;
 
 /**
+ * @author chenguangxue
  * @description 针对请求参数有@RequestBody注解的方法
  * @name chenguangxue
  * @date 2019-08-08 09:19
@@ -23,8 +24,7 @@ import java.lang.reflect.Type;
 public class SpeedyRequestBodyAdvice extends RequestBodyAdviceAdapter implements InitializingLogBean {
 
     @Override
-    public boolean supports(MethodParameter methodParameter, Type type
-            , Class<? extends HttpMessageConverter<?>> aClass) {
+    public boolean supports(MethodParameter methodParameter, Type type, Class<? extends HttpMessageConverter<?>> aClass) {
         return true;
     }
 

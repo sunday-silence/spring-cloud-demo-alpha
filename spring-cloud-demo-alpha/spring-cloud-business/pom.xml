@@ -12,8 +12,10 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-cloud-business</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>spring-cloud-business-customer</module>
         <module>spring-cloud-business-goods</module>
+        <module>spring-cloud-business-boss</module>
     </modules>
 </project>

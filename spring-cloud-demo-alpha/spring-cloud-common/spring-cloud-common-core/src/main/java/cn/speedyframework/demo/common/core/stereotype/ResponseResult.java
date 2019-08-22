@@ -14,12 +14,14 @@ public final class ResponseResult<T> {
     private final String code;
     private final String message;
     private final T data;
+    private final String timestamp;
 
     private ResponseResult(boolean success, String code, String message, T data) {
         this.success = success;
         this.code = code;
         this.message = message;
         this.data = data;
+        this.timestamp = String.valueOf(System.currentTimeMillis());
     }
 
     public static <T> ResponseResult<T> of(boolean success, String code, String message, T data) {

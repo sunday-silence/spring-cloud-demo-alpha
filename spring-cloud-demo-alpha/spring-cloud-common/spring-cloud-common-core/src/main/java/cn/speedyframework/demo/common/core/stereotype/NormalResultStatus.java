@@ -1,5 +1,7 @@
 package cn.speedyframework.demo.common.core.stereotype;
 
+import java.util.function.Supplier;
+
 /**
  * @description 代表正常处理的结果状态
  * @name chenguangxue

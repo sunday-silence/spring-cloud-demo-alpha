@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @ConfigurationProperties(prefix = "speedy.bean")
-@ComponentScan("cn.speedyframework.demo.common.bean")
+@ComponentScan(value = "cn.speedyframework.demo.common.bean")
 @EnableConfigurationProperties
 @Data
 public class SpeedyBeanConfiguration {
@@ -23,7 +23,7 @@ public class SpeedyBeanConfiguration {
      * */
 
     // 自定义请求体拦截器的开关
-    private boolean enableRequestBodyAdvice = true;
+    private boolean enableRequestBodyAdvice = false;
 
     // 自定义异常处理器的开关
     private boolean enableExceptionHandler = true;
